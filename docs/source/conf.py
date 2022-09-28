@@ -11,6 +11,8 @@ version = '0.1.0'
 
 # -- General configuration
 
+import sphinxawesome-theme
+
 extensions = [
     'sphinx.ext.duration',
     'sphinx.ext.doctest',
@@ -18,6 +20,7 @@ extensions = [
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
     'sphinx.ext.mathjax',
+    'sphinxawesome-theme',
 ]
 
 intersphinx_mapping = {
@@ -31,6 +34,7 @@ templates_path = ['_templates']
 # -- Options for HTML output
 
 #html_theme = 'sphinx_rtd_theme'
+html_permalinks_icon = '<span>#</span>'
 html_theme = 'sphinxawesome_theme'
 
 # -- Options for EPUB output
